@@ -1,0 +1,16 @@
+2023-12-18T09:24:27+00:00 CRITICAL Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, function "ux_builder_element" not found or invalid function name in C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php:324
+Stack trace:
+#0 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#1 C:\xampp88\htdocs\ivan2\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#2 C:\xampp88\htdocs\ivan2\wp-content\themes\flatsome\inc\builder\core\server\src\Application.php(63): do_action('ux_builder_setu...')
+#3 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(324): UxBuilder\Application->initialize('')
+#4 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#5 C:\xampp88\htdocs\ivan2\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#6 C:\xampp88\htdocs\ivan2\wp-settings.php(643): do_action('init')
+#7 C:\xampp88\htdocs\ivan2\wp-config.php(99): require_once('C:\\xampp88\\htdo...')
+#8 C:\xampp88\htdocs\ivan2\wp-load.php(50): require_once('C:\\xampp88\\htdo...')
+#9 C:\xampp88\htdocs\ivan2\wp-admin\admin.php(34): require_once('C:\\xampp88\\htdo...')
+#10 C:\xampp88\htdocs\ivan2\wp-admin\post.php(12): require_once('C:\\xampp88\\htdo...')
+#11 {main}
+  thrown di C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php pada baris 324
+

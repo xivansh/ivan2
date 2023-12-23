@@ -1,0 +1,1262 @@
+2023-12-14T02:56:07+00:00 CRITICAL Uncaught Error: Undefined constant "current_page_id" in C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php:143
+Stack trace:
+#0 C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php(153): custom_flatsome_button()
+#1 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(324): tambahkan_tombol_pada_post('<p>Selamt datan...')
+#2 C:\xampp88\htdocs\ivan2\wp-includes\plugin.php(205): WP_Hook->apply_filters('<p>Selamt datan...', Array)
+#3 C:\xampp88\htdocs\ivan2\wp-includes\formatting.php(3992): apply_filters('the_content', '\n<p>Selamt data...')
+#4 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(324): wp_trim_excerpt('\n<p>Selamt data...', Object(WP_Post))
+#5 C:\xampp88\htdocs\ivan2\wp-includes\plugin.php(205): WP_Hook->apply_filters('', Array)
+#6 C:\xampp88\htdocs\ivan2\wp-includes\post-template.php(434): apply_filters('get_the_excerpt', '', Object(WP_Post))
+#7 C:\xampp88\htdocs\ivan2\wp-includes\post-template.php(399): get_the_excerpt()
+#8 C:\xampp88\htdocs\ivan2\wp-content\themes\flatsome\template-parts\posts\content.php(13): the_excerpt()
+#9 C:\xampp88\htdocs\ivan2\wp-includes\template.php(792): require('C:\\xampp88\\htdo...')
+#10 C:\xampp88\htdocs\ivan2\wp-includes\template.php(725): load_template('C:\\xampp88\\htdo...', false, Array)
+#11 C:\xampp88\htdocs\ivan2\wp-includes\general-template.php(206): locate_template(Array, true, false, Array)
+#12 C:\xampp88\htdocs\ivan2\wp-content\themes\flatsome\template-parts\posts\archive.php(18): get_template_part('template-parts/...', 'default')
+#13 C:\xampp88\htdocs\ivan2\wp-includes\template.php(792): require('C:\\xampp88\\htdo...')
+#14 C:\xampp88\htdocs\ivan2\wp-includes\template.php(725): load_template('C:\\xampp88\\htdo...', false, Array)
+#15 C:\xampp88\htdocs\ivan2\wp-includes\general-template.php(206): locate_template(Array, true, false, Array)
+#16 C:\xampp88\htdocs\ivan2\wp-content\themes\flatsome\template-parts\posts\layout-right-sidebar.php(25): get_template_part('template-parts/...', 'normal')
+#17 C:\xampp88\htdocs\ivan2\wp-includes\template.php(792): require('C:\\xampp88\\htdo...')
+#18 C:\xampp88\htdocs\ivan2\wp-includes\template.php(725): load_template('C:\\xampp88\\htdo...', false, Array)
+#19 C:\xampp88\htdocs\ivan2\wp-includes\general-template.php(206): locate_template(Array, true, false, Array)
+#20 C:\xampp88\htdocs\ivan2\wp-content\themes\flatsome\index.php(14): get_template_part('template-parts/...', 'right-sidebar')
+#21 C:\xampp88\htdocs\ivan2\wp-includes\template-loader.php(106): include('C:\\xampp88\\htdo...')
+#22 C:\xampp88\htdocs\ivan2\wp-blog-header.php(19): require_once('C:\\xampp88\\htdo...')
+#23 C:\xampp88\htdocs\ivan2\index.php(17): require('C:\\xampp88\\htdo...')
+#24 {main}
+  thrown di C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php pada baris 143
+
+2023-12-14T03:07:09+00:00 CRITICAL Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, function "tambahkan_tombol_pada_post" not found or invalid function name in C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php:324
+Stack trace:
+#0 C:\xampp88\htdocs\ivan2\wp-includes\plugin.php(205): WP_Hook->apply_filters('<post-wrapper><...', Array)
+#1 C:\xampp88\htdocs\ivan2\wp-includes\post-template.php(256): apply_filters('the_content', '<post-wrapper><...')
+#2 C:\xampp88\htdocs\ivan2\wp-content\themes\flatsome\page.php(33): the_content()
+#3 C:\xampp88\htdocs\ivan2\wp-includes\template-loader.php(106): include('C:\\xampp88\\htdo...')
+#4 C:\xampp88\htdocs\ivan2\wp-blog-header.php(19): require_once('C:\\xampp88\\htdo...')
+#5 C:\xampp88\htdocs\ivan2\index.php(17): require('C:\\xampp88\\htdo...')
+#6 {main}
+  thrown di C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php pada baris 324
+
+2023-12-14T03:32:10+00:00 CRITICAL Uncaught TypeError: call_user_func(): Argument #1 ($callback) must be a valid callback, function "slugs" not found or invalid function name in C:\xampp88\htdocs\ivan2\wp-admin\includes\template.php:1836
+Stack trace:
+#0 C:\xampp88\htdocs\ivan2\wp-admin\includes\template.php(1790): do_settings_fields('prefixs', 'prefix_section_...')
+#1 C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php(54): do_settings_sections('prefixs')
+#2 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(324): save_page('')
+#3 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#4 C:\xampp88\htdocs\ivan2\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#5 C:\xampp88\htdocs\ivan2\wp-admin\admin.php(259): do_action('toplevel_page_p...')
+#6 {main}
+  thrown di C:\xampp88\htdocs\ivan2\wp-admin\includes\template.php pada baris 1836
+
+2023-12-14T03:58:00+00:00 CRITICAL Uncaught TypeError: in_array(): Argument #2 ($haystack) must be of type array, null given in C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php:163
+Stack trace:
+#0 C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php(163): in_array(16, NULL)
+#1 C:\xampp88\htdocs\ivan2\wp-admin\includes\template.php(1836): slugs(Array)
+#2 C:\xampp88\htdocs\ivan2\wp-admin\includes\template.php(1790): do_settings_fields('prefixs', 'prefix_section_...')
+#3 C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php(54): do_settings_sections('prefixs')
+#4 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(324): save_page('')
+#5 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#6 C:\xampp88\htdocs\ivan2\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#7 C:\xampp88\htdocs\ivan2\wp-admin\admin.php(259): do_action('toplevel_page_p...')
+#8 {main}
+  thrown di C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php pada baris 163
+
+2023-12-14T03:58:57+00:00 CRITICAL Uncaught TypeError: in_array(): Argument #2 ($haystack) must be of type array, null given in C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php:163
+Stack trace:
+#0 C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php(163): in_array(16, NULL)
+#1 C:\xampp88\htdocs\ivan2\wp-admin\includes\template.php(1836): slugs(Array)
+#2 C:\xampp88\htdocs\ivan2\wp-admin\includes\template.php(1790): do_settings_fields('prefixs', 'prefix_section_...')
+#3 C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php(54): do_settings_sections('prefixs')
+#4 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(324): save_page('')
+#5 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#6 C:\xampp88\htdocs\ivan2\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#7 C:\xampp88\htdocs\ivan2\wp-admin\admin.php(259): do_action('toplevel_page_p...')
+#8 {main}
+  thrown di C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php pada baris 163
+
+2023-12-14T04:00:14+00:00 CRITICAL Uncaught TypeError: in_array(): Argument #2 ($haystack) must be of type array, null given in C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php:164
+Stack trace:
+#0 C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php(164): in_array(16, NULL)
+#1 C:\xampp88\htdocs\ivan2\wp-admin\includes\template.php(1836): slugs(Array)
+#2 C:\xampp88\htdocs\ivan2\wp-admin\includes\template.php(1790): do_settings_fields('prefixs', 'prefix_section_...')
+#3 C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php(54): do_settings_sections('prefixs')
+#4 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(324): save_page('')
+#5 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#6 C:\xampp88\htdocs\ivan2\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#7 C:\xampp88\htdocs\ivan2\wp-admin\admin.php(259): do_action('toplevel_page_p...')
+#8 {main}
+  thrown di C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php pada baris 164
+
+2023-12-14T04:00:24+00:00 CRITICAL Uncaught TypeError: in_array(): Argument #2 ($haystack) must be of type array, null given in C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php:163
+Stack trace:
+#0 C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php(163): in_array(16, NULL)
+#1 C:\xampp88\htdocs\ivan2\wp-admin\includes\template.php(1836): slugs(Array)
+#2 C:\xampp88\htdocs\ivan2\wp-admin\includes\template.php(1790): do_settings_fields('prefixs', 'prefix_section_...')
+#3 C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php(54): do_settings_sections('prefixs')
+#4 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(324): save_page('')
+#5 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#6 C:\xampp88\htdocs\ivan2\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#7 C:\xampp88\htdocs\ivan2\wp-admin\admin.php(259): do_action('toplevel_page_p...')
+#8 {main}
+  thrown di C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php pada baris 163
+
+2023-12-14T04:01:09+00:00 CRITICAL Uncaught TypeError: in_array(): Argument #2 ($haystack) must be of type array, null given in C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php:163
+Stack trace:
+#0 C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php(163): in_array(16, NULL)
+#1 C:\xampp88\htdocs\ivan2\wp-admin\includes\template.php(1836): slugs(Array)
+#2 C:\xampp88\htdocs\ivan2\wp-admin\includes\template.php(1790): do_settings_fields('prefixs', 'prefix_section_...')
+#3 C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php(54): do_settings_sections('prefixs')
+#4 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(324): save_page('')
+#5 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#6 C:\xampp88\htdocs\ivan2\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#7 C:\xampp88\htdocs\ivan2\wp-admin\admin.php(259): do_action('toplevel_page_p...')
+#8 {main}
+  thrown di C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php pada baris 163
+
+2023-12-14T04:01:19+00:00 CRITICAL Uncaught Error: Cannot use object of type WP_Post as array in C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php:151
+Stack trace:
+#0 C:\xampp88\htdocs\ivan2\wp-admin\includes\template.php(1836): slugs(Array)
+#1 C:\xampp88\htdocs\ivan2\wp-admin\includes\template.php(1790): do_settings_fields('prefixs', 'prefix_section_...')
+#2 C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php(54): do_settings_sections('prefixs')
+#3 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(324): save_page('')
+#4 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#5 C:\xampp88\htdocs\ivan2\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#6 C:\xampp88\htdocs\ivan2\wp-admin\admin.php(259): do_action('toplevel_page_p...')
+#7 {main}
+  thrown di C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php pada baris 151
+
+2023-12-14T04:01:33+00:00 CRITICAL Uncaught TypeError: in_array(): Argument #2 ($haystack) must be of type array, null given in C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php:163
+Stack trace:
+#0 C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php(163): in_array(16, NULL)
+#1 C:\xampp88\htdocs\ivan2\wp-admin\includes\template.php(1836): slugs(Array)
+#2 C:\xampp88\htdocs\ivan2\wp-admin\includes\template.php(1790): do_settings_fields('prefixs', 'prefix_section_...')
+#3 C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php(54): do_settings_sections('prefixs')
+#4 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(324): save_page('')
+#5 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#6 C:\xampp88\htdocs\ivan2\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#7 C:\xampp88\htdocs\ivan2\wp-admin\admin.php(259): do_action('toplevel_page_p...')
+#8 {main}
+  thrown di C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php pada baris 163
+
+2023-12-14T04:03:49+00:00 CRITICAL Uncaught TypeError: in_array(): Argument #2 ($haystack) must be of type array, null given in C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php:187
+Stack trace:
+#0 C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php(187): in_array(16, NULL)
+#1 C:\xampp88\htdocs\ivan2\wp-admin\includes\template.php(1836): slugs(Array)
+#2 C:\xampp88\htdocs\ivan2\wp-admin\includes\template.php(1790): do_settings_fields('prefixs', 'prefix_section_...')
+#3 C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php(54): do_settings_sections('prefixs')
+#4 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(324): save_page('')
+#5 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#6 C:\xampp88\htdocs\ivan2\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#7 C:\xampp88\htdocs\ivan2\wp-admin\admin.php(259): do_action('toplevel_page_p...')
+#8 {main}
+  thrown di C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php pada baris 187
+
+2023-12-14T04:04:18+00:00 CRITICAL Uncaught TypeError: in_array(): Argument #2 ($haystack) must be of type array, null given in C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php:181
+Stack trace:
+#0 C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php(181): in_array(16, NULL)
+#1 C:\xampp88\htdocs\ivan2\wp-admin\includes\template.php(1836): slugs(Array)
+#2 C:\xampp88\htdocs\ivan2\wp-admin\includes\template.php(1790): do_settings_fields('prefixs', 'prefix_section_...')
+#3 C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php(54): do_settings_sections('prefixs')
+#4 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(324): save_page('')
+#5 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#6 C:\xampp88\htdocs\ivan2\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#7 C:\xampp88\htdocs\ivan2\wp-admin\admin.php(259): do_action('toplevel_page_p...')
+#8 {main}
+  thrown di C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php pada baris 181
+
+2023-12-14T04:06:19+00:00 CRITICAL Uncaught Error: Call to undefined function dump() in C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php:170
+Stack trace:
+#0 C:\xampp88\htdocs\ivan2\wp-admin\includes\template.php(1836): slugs(Array)
+#1 C:\xampp88\htdocs\ivan2\wp-admin\includes\template.php(1790): do_settings_fields('prefixs', 'prefix_section_...')
+#2 C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php(54): do_settings_sections('prefixs')
+#3 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(324): save_page('')
+#4 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#5 C:\xampp88\htdocs\ivan2\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#6 C:\xampp88\htdocs\ivan2\wp-admin\admin.php(259): do_action('toplevel_page_p...')
+#7 {main}
+  thrown di C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php pada baris 170
+
+2023-12-14T04:06:36+00:00 CRITICAL Uncaught TypeError: in_array(): Argument #2 ($haystack) must be of type array, null given in C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php:183
+Stack trace:
+#0 C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php(183): in_array(16, NULL)
+#1 C:\xampp88\htdocs\ivan2\wp-admin\includes\template.php(1836): slugs(Array)
+#2 C:\xampp88\htdocs\ivan2\wp-admin\includes\template.php(1790): do_settings_fields('prefixs', 'prefix_section_...')
+#3 C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php(54): do_settings_sections('prefixs')
+#4 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(324): save_page('')
+#5 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#6 C:\xampp88\htdocs\ivan2\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#7 C:\xampp88\htdocs\ivan2\wp-admin\admin.php(259): do_action('toplevel_page_p...')
+#8 {main}
+  thrown di C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php pada baris 183
+
+2023-12-14T04:08:05+00:00 CRITICAL Uncaught TypeError: in_array(): Argument #2 ($haystack) must be of type array, null given in C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php:186
+Stack trace:
+#0 C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php(186): in_array(16, NULL)
+#1 C:\xampp88\htdocs\ivan2\wp-admin\includes\template.php(1836): slugs(Array)
+#2 C:\xampp88\htdocs\ivan2\wp-admin\includes\template.php(1790): do_settings_fields('prefixs', 'prefix_section_...')
+#3 C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php(54): do_settings_sections('prefixs')
+#4 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(324): save_page('')
+#5 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#6 C:\xampp88\htdocs\ivan2\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#7 C:\xampp88\htdocs\ivan2\wp-admin\admin.php(259): do_action('toplevel_page_p...')
+#8 {main}
+  thrown di C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php pada baris 186
+
+2023-12-14T04:08:19+00:00 CRITICAL Uncaught Error: Object of class WP_Post could not be converted to string in C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php:171
+Stack trace:
+#0 C:\xampp88\htdocs\ivan2\wp-admin\includes\template.php(1836): slugs(Array)
+#1 C:\xampp88\htdocs\ivan2\wp-admin\includes\template.php(1790): do_settings_fields('prefixs', 'prefix_section_...')
+#2 C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php(54): do_settings_sections('prefixs')
+#3 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(324): save_page('')
+#4 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#5 C:\xampp88\htdocs\ivan2\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#6 C:\xampp88\htdocs\ivan2\wp-admin\admin.php(259): do_action('toplevel_page_p...')
+#7 {main}
+  thrown di C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php pada baris 171
+
+2023-12-14T04:09:01+00:00 CRITICAL Uncaught TypeError: in_array(): Argument #2 ($haystack) must be of type array, null given in C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php:191
+Stack trace:
+#0 C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php(191): in_array(16, NULL)
+#1 C:\xampp88\htdocs\ivan2\wp-admin\includes\template.php(1836): slugs(Array)
+#2 C:\xampp88\htdocs\ivan2\wp-admin\includes\template.php(1790): do_settings_fields('prefixs', 'prefix_section_...')
+#3 C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php(54): do_settings_sections('prefixs')
+#4 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(324): save_page('')
+#5 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#6 C:\xampp88\htdocs\ivan2\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#7 C:\xampp88\htdocs\ivan2\wp-admin\admin.php(259): do_action('toplevel_page_p...')
+#8 {main}
+  thrown di C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php pada baris 191
+
+2023-12-14T04:09:38+00:00 CRITICAL Uncaught TypeError: in_array(): Argument #2 ($haystack) must be of type array, null given in C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php:191
+Stack trace:
+#0 C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php(191): in_array(16, NULL)
+#1 C:\xampp88\htdocs\ivan2\wp-admin\includes\template.php(1836): slugs(Array)
+#2 C:\xampp88\htdocs\ivan2\wp-admin\includes\template.php(1790): do_settings_fields('prefixs', 'prefix_section_...')
+#3 C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php(54): do_settings_sections('prefixs')
+#4 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(324): save_page('')
+#5 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#6 C:\xampp88\htdocs\ivan2\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#7 C:\xampp88\htdocs\ivan2\wp-admin\admin.php(259): do_action('toplevel_page_p...')
+#8 {main}
+  thrown di C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php pada baris 191
+
+2023-12-14T04:11:38+00:00 CRITICAL Uncaught TypeError: in_array(): Argument #2 ($haystack) must be of type array, null given in C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php:195
+Stack trace:
+#0 C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php(195): in_array(16, NULL)
+#1 C:\xampp88\htdocs\ivan2\wp-admin\includes\template.php(1836): slugs(Array)
+#2 C:\xampp88\htdocs\ivan2\wp-admin\includes\template.php(1790): do_settings_fields('prefixs', 'prefix_section_...')
+#3 C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php(54): do_settings_sections('prefixs')
+#4 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(324): save_page('')
+#5 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#6 C:\xampp88\htdocs\ivan2\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#7 C:\xampp88\htdocs\ivan2\wp-admin\admin.php(259): do_action('toplevel_page_p...')
+#8 {main}
+  thrown di C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php pada baris 195
+
+2023-12-14T04:12:15+00:00 CRITICAL Uncaught TypeError: in_array(): Argument #2 ($haystack) must be of type array, null given in C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php:195
+Stack trace:
+#0 C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php(195): in_array(NULL, NULL)
+#1 C:\xampp88\htdocs\ivan2\wp-admin\includes\template.php(1836): slugs(Array)
+#2 C:\xampp88\htdocs\ivan2\wp-admin\includes\template.php(1790): do_settings_fields('prefixs', 'prefix_section_...')
+#3 C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php(54): do_settings_sections('prefixs')
+#4 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(324): save_page('')
+#5 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#6 C:\xampp88\htdocs\ivan2\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#7 C:\xampp88\htdocs\ivan2\wp-admin\admin.php(259): do_action('toplevel_page_p...')
+#8 {main}
+  thrown di C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php pada baris 195
+
+2023-12-14T04:12:42+00:00 CRITICAL Uncaught TypeError: in_array(): Argument #2 ($haystack) must be of type array, null given in C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php:194
+Stack trace:
+#0 C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php(194): in_array(NULL, NULL)
+#1 C:\xampp88\htdocs\ivan2\wp-admin\includes\template.php(1836): slugs(Array)
+#2 C:\xampp88\htdocs\ivan2\wp-admin\includes\template.php(1790): do_settings_fields('prefixs', 'prefix_section_...')
+#3 C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php(54): do_settings_sections('prefixs')
+#4 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(324): save_page('')
+#5 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#6 C:\xampp88\htdocs\ivan2\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#7 C:\xampp88\htdocs\ivan2\wp-admin\admin.php(259): do_action('toplevel_page_p...')
+#8 {main}
+  thrown di C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php pada baris 194
+
+2023-12-14T04:12:58+00:00 CRITICAL Uncaught TypeError: in_array(): Argument #2 ($haystack) must be of type array, null given in C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php:196
+Stack trace:
+#0 C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php(196): in_array(NULL, NULL)
+#1 C:\xampp88\htdocs\ivan2\wp-admin\includes\template.php(1836): slugs(Array)
+#2 C:\xampp88\htdocs\ivan2\wp-admin\includes\template.php(1790): do_settings_fields('prefixs', 'prefix_section_...')
+#3 C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php(54): do_settings_sections('prefixs')
+#4 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(324): save_page('')
+#5 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#6 C:\xampp88\htdocs\ivan2\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#7 C:\xampp88\htdocs\ivan2\wp-admin\admin.php(259): do_action('toplevel_page_p...')
+#8 {main}
+  thrown di C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php pada baris 196
+
+2023-12-14T04:13:19+00:00 CRITICAL Uncaught TypeError: in_array(): Argument #2 ($haystack) must be of type array, null given in C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php:197
+Stack trace:
+#0 C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php(197): in_array(NULL, NULL)
+#1 C:\xampp88\htdocs\ivan2\wp-admin\includes\template.php(1836): slugs(Array)
+#2 C:\xampp88\htdocs\ivan2\wp-admin\includes\template.php(1790): do_settings_fields('prefixs', 'prefix_section_...')
+#3 C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php(54): do_settings_sections('prefixs')
+#4 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(324): save_page('')
+#5 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#6 C:\xampp88\htdocs\ivan2\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#7 C:\xampp88\htdocs\ivan2\wp-admin\admin.php(259): do_action('toplevel_page_p...')
+#8 {main}
+  thrown di C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php pada baris 197
+
+2023-12-14T04:14:53+00:00 CRITICAL Uncaught TypeError: in_array(): Argument #2 ($haystack) must be of type array, null given in C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php:197
+Stack trace:
+#0 C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php(197): in_array(NULL, NULL)
+#1 C:\xampp88\htdocs\ivan2\wp-admin\includes\template.php(1836): slugs(Array)
+#2 C:\xampp88\htdocs\ivan2\wp-admin\includes\template.php(1790): do_settings_fields('prefixs', 'prefix_section_...')
+#3 C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php(54): do_settings_sections('prefixs')
+#4 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(324): save_page('')
+#5 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#6 C:\xampp88\htdocs\ivan2\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#7 C:\xampp88\htdocs\ivan2\wp-admin\admin.php(259): do_action('toplevel_page_p...')
+#8 {main}
+  thrown di C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php pada baris 197
+
+2023-12-14T04:15:25+00:00 CRITICAL Uncaught TypeError: in_array(): Argument #2 ($haystack) must be of type array, null given in C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php:198
+Stack trace:
+#0 C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php(198): in_array(NULL, NULL)
+#1 C:\xampp88\htdocs\ivan2\wp-admin\includes\template.php(1836): slugs(Array)
+#2 C:\xampp88\htdocs\ivan2\wp-admin\includes\template.php(1790): do_settings_fields('prefixs', 'prefix_section_...')
+#3 C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php(54): do_settings_sections('prefixs')
+#4 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(324): save_page('')
+#5 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#6 C:\xampp88\htdocs\ivan2\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#7 C:\xampp88\htdocs\ivan2\wp-admin\admin.php(259): do_action('toplevel_page_p...')
+#8 {main}
+  thrown di C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php pada baris 198
+
+2023-12-14T04:17:04+00:00 CRITICAL Uncaught TypeError: in_array(): Argument #2 ($haystack) must be of type array, null given in C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php:197
+Stack trace:
+#0 C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php(197): in_array(NULL, NULL)
+#1 C:\xampp88\htdocs\ivan2\wp-admin\includes\template.php(1836): slugs(Array)
+#2 C:\xampp88\htdocs\ivan2\wp-admin\includes\template.php(1790): do_settings_fields('prefixs', 'prefix_section_...')
+#3 C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php(54): do_settings_sections('prefixs')
+#4 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(324): save_page('')
+#5 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#6 C:\xampp88\htdocs\ivan2\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#7 C:\xampp88\htdocs\ivan2\wp-admin\admin.php(259): do_action('toplevel_page_p...')
+#8 {main}
+  thrown di C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php pada baris 197
+
+2023-12-14T04:17:19+00:00 CRITICAL Uncaught TypeError: in_array(): Argument #2 ($haystack) must be of type array, null given in C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php:198
+Stack trace:
+#0 C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php(198): in_array(NULL, NULL)
+#1 C:\xampp88\htdocs\ivan2\wp-admin\includes\template.php(1836): slugs(Array)
+#2 C:\xampp88\htdocs\ivan2\wp-admin\includes\template.php(1790): do_settings_fields('prefixs', 'prefix_section_...')
+#3 C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php(54): do_settings_sections('prefixs')
+#4 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(324): save_page('')
+#5 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#6 C:\xampp88\htdocs\ivan2\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#7 C:\xampp88\htdocs\ivan2\wp-admin\admin.php(259): do_action('toplevel_page_p...')
+#8 {main}
+  thrown di C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php pada baris 198
+
+2023-12-14T04:17:24+00:00 CRITICAL Uncaught TypeError: in_array(): Argument #2 ($haystack) must be of type array, null given in C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php:198
+Stack trace:
+#0 C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php(198): in_array(NULL, NULL)
+#1 C:\xampp88\htdocs\ivan2\wp-admin\includes\template.php(1836): slugs(Array)
+#2 C:\xampp88\htdocs\ivan2\wp-admin\includes\template.php(1790): do_settings_fields('prefixs', 'prefix_section_...')
+#3 C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php(54): do_settings_sections('prefixs')
+#4 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(324): save_page('')
+#5 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#6 C:\xampp88\htdocs\ivan2\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#7 C:\xampp88\htdocs\ivan2\wp-admin\admin.php(259): do_action('toplevel_page_p...')
+#8 {main}
+  thrown di C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php pada baris 198
+
+2023-12-14T04:18:05+00:00 CRITICAL Uncaught TypeError: in_array(): Argument #2 ($haystack) must be of type array, null given in C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php:196
+Stack trace:
+#0 C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php(196): in_array(NULL, NULL)
+#1 C:\xampp88\htdocs\ivan2\wp-admin\includes\template.php(1836): slugs(Array)
+#2 C:\xampp88\htdocs\ivan2\wp-admin\includes\template.php(1790): do_settings_fields('prefixs', 'prefix_section_...')
+#3 C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php(54): do_settings_sections('prefixs')
+#4 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(324): save_page('')
+#5 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#6 C:\xampp88\htdocs\ivan2\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#7 C:\xampp88\htdocs\ivan2\wp-admin\admin.php(259): do_action('toplevel_page_p...')
+#8 {main}
+  thrown di C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php pada baris 196
+
+2023-12-14T04:19:22+00:00 CRITICAL Uncaught TypeError: in_array(): Argument #2 ($haystack) must be of type array, null given in C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php:195
+Stack trace:
+#0 C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php(195): in_array(NULL, NULL)
+#1 C:\xampp88\htdocs\ivan2\wp-admin\includes\template.php(1836): slugs(Array)
+#2 C:\xampp88\htdocs\ivan2\wp-admin\includes\template.php(1790): do_settings_fields('prefixs', 'prefix_section_...')
+#3 C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php(54): do_settings_sections('prefixs')
+#4 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(324): save_page('')
+#5 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#6 C:\xampp88\htdocs\ivan2\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#7 C:\xampp88\htdocs\ivan2\wp-admin\admin.php(259): do_action('toplevel_page_p...')
+#8 {main}
+  thrown di C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php pada baris 195
+
+2023-12-14T04:19:36+00:00 CRITICAL Uncaught TypeError: in_array(): Argument #2 ($haystack) must be of type array, null given in C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php:196
+Stack trace:
+#0 C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php(196): in_array(NULL, NULL)
+#1 C:\xampp88\htdocs\ivan2\wp-admin\includes\template.php(1836): slugs(Array)
+#2 C:\xampp88\htdocs\ivan2\wp-admin\includes\template.php(1790): do_settings_fields('prefixs', 'prefix_section_...')
+#3 C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php(54): do_settings_sections('prefixs')
+#4 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(324): save_page('')
+#5 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#6 C:\xampp88\htdocs\ivan2\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#7 C:\xampp88\htdocs\ivan2\wp-admin\admin.php(259): do_action('toplevel_page_p...')
+#8 {main}
+  thrown di C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php pada baris 196
+
+2023-12-14T04:19:45+00:00 CRITICAL Uncaught TypeError: in_array(): Argument #2 ($haystack) must be of type array, null given in C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php:196
+Stack trace:
+#0 C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php(196): in_array(NULL, NULL)
+#1 C:\xampp88\htdocs\ivan2\wp-admin\includes\template.php(1836): slugs(Array)
+#2 C:\xampp88\htdocs\ivan2\wp-admin\includes\template.php(1790): do_settings_fields('prefixs', 'prefix_section_...')
+#3 C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php(54): do_settings_sections('prefixs')
+#4 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(324): save_page('')
+#5 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#6 C:\xampp88\htdocs\ivan2\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#7 C:\xampp88\htdocs\ivan2\wp-admin\admin.php(259): do_action('toplevel_page_p...')
+#8 {main}
+  thrown di C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php pada baris 196
+
+2023-12-14T04:20:00+00:00 CRITICAL Uncaught TypeError: in_array(): Argument #2 ($haystack) must be of type array, null given in C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php:196
+Stack trace:
+#0 C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php(196): in_array(NULL, NULL)
+#1 C:\xampp88\htdocs\ivan2\wp-admin\includes\template.php(1836): slugs(Array)
+#2 C:\xampp88\htdocs\ivan2\wp-admin\includes\template.php(1790): do_settings_fields('prefixs', 'prefix_section_...')
+#3 C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php(54): do_settings_sections('prefixs')
+#4 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(324): save_page('')
+#5 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#6 C:\xampp88\htdocs\ivan2\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#7 C:\xampp88\htdocs\ivan2\wp-admin\admin.php(259): do_action('toplevel_page_p...')
+#8 {main}
+  thrown di C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php pada baris 196
+
+2023-12-14T04:20:04+00:00 CRITICAL Uncaught TypeError: in_array(): Argument #2 ($haystack) must be of type array, null given in C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php:196
+Stack trace:
+#0 C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php(196): in_array(NULL, NULL)
+#1 C:\xampp88\htdocs\ivan2\wp-admin\includes\template.php(1836): slugs(Array)
+#2 C:\xampp88\htdocs\ivan2\wp-admin\includes\template.php(1790): do_settings_fields('prefixs', 'prefix_section_...')
+#3 C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php(54): do_settings_sections('prefixs')
+#4 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(324): save_page('')
+#5 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#6 C:\xampp88\htdocs\ivan2\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#7 C:\xampp88\htdocs\ivan2\wp-admin\admin.php(259): do_action('toplevel_page_p...')
+#8 {main}
+  thrown di C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php pada baris 196
+
+2023-12-14T04:20:18+00:00 CRITICAL Uncaught TypeError: in_array(): Argument #2 ($haystack) must be of type array, null given in C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php:196
+Stack trace:
+#0 C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php(196): in_array(NULL, NULL)
+#1 C:\xampp88\htdocs\ivan2\wp-admin\includes\template.php(1836): slugs(Array)
+#2 C:\xampp88\htdocs\ivan2\wp-admin\includes\template.php(1790): do_settings_fields('prefixs', 'prefix_section_...')
+#3 C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php(54): do_settings_sections('prefixs')
+#4 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(324): save_page('')
+#5 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#6 C:\xampp88\htdocs\ivan2\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#7 C:\xampp88\htdocs\ivan2\wp-admin\admin.php(259): do_action('toplevel_page_p...')
+#8 {main}
+  thrown di C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php pada baris 196
+
+2023-12-14T04:20:34+00:00 CRITICAL Uncaught TypeError: in_array(): Argument #2 ($haystack) must be of type array, null given in C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php:196
+Stack trace:
+#0 C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php(196): in_array(NULL, NULL)
+#1 C:\xampp88\htdocs\ivan2\wp-admin\includes\template.php(1836): slugs(Array)
+#2 C:\xampp88\htdocs\ivan2\wp-admin\includes\template.php(1790): do_settings_fields('prefixs', 'prefix_section_...')
+#3 C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php(54): do_settings_sections('prefixs')
+#4 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(324): save_page('')
+#5 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#6 C:\xampp88\htdocs\ivan2\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#7 C:\xampp88\htdocs\ivan2\wp-admin\admin.php(259): do_action('toplevel_page_p...')
+#8 {main}
+  thrown di C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php pada baris 196
+
+2023-12-14T04:20:43+00:00 CRITICAL Uncaught TypeError: in_array(): Argument #2 ($haystack) must be of type array, null given in C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php:196
+Stack trace:
+#0 C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php(196): in_array(NULL, NULL)
+#1 C:\xampp88\htdocs\ivan2\wp-admin\includes\template.php(1836): slugs(Array)
+#2 C:\xampp88\htdocs\ivan2\wp-admin\includes\template.php(1790): do_settings_fields('prefixs', 'prefix_section_...')
+#3 C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php(54): do_settings_sections('prefixs')
+#4 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(324): save_page('')
+#5 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#6 C:\xampp88\htdocs\ivan2\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#7 C:\xampp88\htdocs\ivan2\wp-admin\admin.php(259): do_action('toplevel_page_p...')
+#8 {main}
+  thrown di C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php pada baris 196
+
+2023-12-14T04:21:02+00:00 CRITICAL Uncaught TypeError: in_array(): Argument #2 ($haystack) must be of type array, null given in C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php:196
+Stack trace:
+#0 C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php(196): in_array(NULL, NULL)
+#1 C:\xampp88\htdocs\ivan2\wp-admin\includes\template.php(1836): slugs(Array)
+#2 C:\xampp88\htdocs\ivan2\wp-admin\includes\template.php(1790): do_settings_fields('prefixs', 'prefix_section_...')
+#3 C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php(54): do_settings_sections('prefixs')
+#4 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(324): save_page('')
+#5 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#6 C:\xampp88\htdocs\ivan2\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#7 C:\xampp88\htdocs\ivan2\wp-admin\admin.php(259): do_action('toplevel_page_p...')
+#8 {main}
+  thrown di C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php pada baris 196
+
+2023-12-14T04:21:58+00:00 CRITICAL Uncaught TypeError: in_array(): Argument #2 ($haystack) must be of type array, null given in C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php:196
+Stack trace:
+#0 C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php(196): in_array(NULL, NULL)
+#1 C:\xampp88\htdocs\ivan2\wp-admin\includes\template.php(1836): slugs(Array)
+#2 C:\xampp88\htdocs\ivan2\wp-admin\includes\template.php(1790): do_settings_fields('prefixs', 'prefix_section_...')
+#3 C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php(54): do_settings_sections('prefixs')
+#4 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(324): save_page('')
+#5 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#6 C:\xampp88\htdocs\ivan2\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#7 C:\xampp88\htdocs\ivan2\wp-admin\admin.php(259): do_action('toplevel_page_p...')
+#8 {main}
+  thrown di C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php pada baris 196
+
+2023-12-14T04:22:09+00:00 CRITICAL Uncaught TypeError: in_array(): Argument #2 ($haystack) must be of type array, null given in C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php:196
+Stack trace:
+#0 C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php(196): in_array(NULL, NULL)
+#1 C:\xampp88\htdocs\ivan2\wp-admin\includes\template.php(1836): slugs(Array)
+#2 C:\xampp88\htdocs\ivan2\wp-admin\includes\template.php(1790): do_settings_fields('prefixs', 'prefix_section_...')
+#3 C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php(54): do_settings_sections('prefixs')
+#4 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(324): save_page('')
+#5 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#6 C:\xampp88\htdocs\ivan2\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#7 C:\xampp88\htdocs\ivan2\wp-admin\admin.php(259): do_action('toplevel_page_p...')
+#8 {main}
+  thrown di C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php pada baris 196
+
+2023-12-14T04:24:07+00:00 CRITICAL Uncaught Error: Undefined constant "v" in C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php:186
+Stack trace:
+#0 C:\xampp88\htdocs\ivan2\wp-admin\includes\template.php(1836): slugs(Array)
+#1 C:\xampp88\htdocs\ivan2\wp-admin\includes\template.php(1790): do_settings_fields('prefixs', 'prefix_section_...')
+#2 C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php(54): do_settings_sections('prefixs')
+#3 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(324): save_page('')
+#4 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#5 C:\xampp88\htdocs\ivan2\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#6 C:\xampp88\htdocs\ivan2\wp-admin\admin.php(259): do_action('toplevel_page_p...')
+#7 {main}
+  thrown di C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php pada baris 186
+
+2023-12-14T04:24:28+00:00 CRITICAL Uncaught TypeError: in_array(): Argument #2 ($haystack) must be of type array, null given in C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php:195
+Stack trace:
+#0 C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php(195): in_array(NULL, NULL)
+#1 C:\xampp88\htdocs\ivan2\wp-admin\includes\template.php(1836): slugs(Array)
+#2 C:\xampp88\htdocs\ivan2\wp-admin\includes\template.php(1790): do_settings_fields('prefixs', 'prefix_section_...')
+#3 C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php(54): do_settings_sections('prefixs')
+#4 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(324): save_page('')
+#5 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#6 C:\xampp88\htdocs\ivan2\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#7 C:\xampp88\htdocs\ivan2\wp-admin\admin.php(259): do_action('toplevel_page_p...')
+#8 {main}
+  thrown di C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php pada baris 195
+
+2023-12-14T04:24:45+00:00 CRITICAL Uncaught TypeError: in_array(): Argument #2 ($haystack) must be of type array, null given in C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php:195
+Stack trace:
+#0 C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php(195): in_array(NULL, NULL)
+#1 C:\xampp88\htdocs\ivan2\wp-admin\includes\template.php(1836): slugs(Array)
+#2 C:\xampp88\htdocs\ivan2\wp-admin\includes\template.php(1790): do_settings_fields('prefixs', 'prefix_section_...')
+#3 C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php(54): do_settings_sections('prefixs')
+#4 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(324): save_page('')
+#5 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#6 C:\xampp88\htdocs\ivan2\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#7 C:\xampp88\htdocs\ivan2\wp-admin\admin.php(259): do_action('toplevel_page_p...')
+#8 {main}
+  thrown di C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php pada baris 195
+
+2023-12-14T04:24:52+00:00 CRITICAL Uncaught TypeError: in_array(): Argument #2 ($haystack) must be of type array, null given in C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php:195
+Stack trace:
+#0 C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php(195): in_array(NULL, NULL)
+#1 C:\xampp88\htdocs\ivan2\wp-admin\includes\template.php(1836): slugs(Array)
+#2 C:\xampp88\htdocs\ivan2\wp-admin\includes\template.php(1790): do_settings_fields('prefixs', 'prefix_section_...')
+#3 C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php(54): do_settings_sections('prefixs')
+#4 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(324): save_page('')
+#5 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#6 C:\xampp88\htdocs\ivan2\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#7 C:\xampp88\htdocs\ivan2\wp-admin\admin.php(259): do_action('toplevel_page_p...')
+#8 {main}
+  thrown di C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php pada baris 195
+
+2023-12-14T04:25:21+00:00 CRITICAL Uncaught TypeError: in_array(): Argument #2 ($haystack) must be of type array, null given in C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php:195
+Stack trace:
+#0 C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php(195): in_array(NULL, NULL)
+#1 C:\xampp88\htdocs\ivan2\wp-admin\includes\template.php(1836): slugs(Array)
+#2 C:\xampp88\htdocs\ivan2\wp-admin\includes\template.php(1790): do_settings_fields('prefixs', 'prefix_section_...')
+#3 C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php(54): do_settings_sections('prefixs')
+#4 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(324): save_page('')
+#5 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#6 C:\xampp88\htdocs\ivan2\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#7 C:\xampp88\htdocs\ivan2\wp-admin\admin.php(259): do_action('toplevel_page_p...')
+#8 {main}
+  thrown di C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php pada baris 195
+
+2023-12-14T04:25:51+00:00 CRITICAL Uncaught TypeError: in_array(): Argument #2 ($haystack) must be of type array, null given in C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php:195
+Stack trace:
+#0 C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php(195): in_array(NULL, NULL)
+#1 C:\xampp88\htdocs\ivan2\wp-admin\includes\template.php(1836): slugs(Array)
+#2 C:\xampp88\htdocs\ivan2\wp-admin\includes\template.php(1790): do_settings_fields('prefixs', 'prefix_section_...')
+#3 C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php(54): do_settings_sections('prefixs')
+#4 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(324): save_page('')
+#5 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#6 C:\xampp88\htdocs\ivan2\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#7 C:\xampp88\htdocs\ivan2\wp-admin\admin.php(259): do_action('toplevel_page_p...')
+#8 {main}
+  thrown di C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php pada baris 195
+
+2023-12-14T04:25:55+00:00 CRITICAL Uncaught TypeError: in_array(): Argument #2 ($haystack) must be of type array, null given in C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php:195
+Stack trace:
+#0 C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php(195): in_array(NULL, NULL)
+#1 C:\xampp88\htdocs\ivan2\wp-admin\includes\template.php(1836): slugs(Array)
+#2 C:\xampp88\htdocs\ivan2\wp-admin\includes\template.php(1790): do_settings_fields('prefixs', 'prefix_section_...')
+#3 C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php(54): do_settings_sections('prefixs')
+#4 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(324): save_page('')
+#5 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#6 C:\xampp88\htdocs\ivan2\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#7 C:\xampp88\htdocs\ivan2\wp-admin\admin.php(259): do_action('toplevel_page_p...')
+#8 {main}
+  thrown di C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php pada baris 195
+
+2023-12-14T04:26:40+00:00 CRITICAL Uncaught TypeError: in_array(): Argument #2 ($haystack) must be of type array, null given in C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php:193
+Stack trace:
+#0 C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php(193): in_array(NULL, NULL)
+#1 C:\xampp88\htdocs\ivan2\wp-admin\includes\template.php(1836): slugs(Array)
+#2 C:\xampp88\htdocs\ivan2\wp-admin\includes\template.php(1790): do_settings_fields('prefixs', 'prefix_section_...')
+#3 C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php(54): do_settings_sections('prefixs')
+#4 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(324): save_page('')
+#5 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#6 C:\xampp88\htdocs\ivan2\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#7 C:\xampp88\htdocs\ivan2\wp-admin\admin.php(259): do_action('toplevel_page_p...')
+#8 {main}
+  thrown di C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php pada baris 193
+
+2023-12-14T04:27:01+00:00 CRITICAL Uncaught TypeError: in_array(): Argument #2 ($haystack) must be of type array, null given in C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php:194
+Stack trace:
+#0 C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php(194): in_array(NULL, NULL)
+#1 C:\xampp88\htdocs\ivan2\wp-admin\includes\template.php(1836): slugs(Array)
+#2 C:\xampp88\htdocs\ivan2\wp-admin\includes\template.php(1790): do_settings_fields('prefixs', 'prefix_section_...')
+#3 C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php(54): do_settings_sections('prefixs')
+#4 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(324): save_page('')
+#5 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#6 C:\xampp88\htdocs\ivan2\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#7 C:\xampp88\htdocs\ivan2\wp-admin\admin.php(259): do_action('toplevel_page_p...')
+#8 {main}
+  thrown di C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php pada baris 194
+
+2023-12-14T04:28:17+00:00 CRITICAL Uncaught TypeError: in_array(): Argument #2 ($haystack) must be of type array, null given in C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php:194
+Stack trace:
+#0 C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php(194): in_array(NULL, NULL)
+#1 C:\xampp88\htdocs\ivan2\wp-admin\includes\template.php(1836): slugs(Array)
+#2 C:\xampp88\htdocs\ivan2\wp-admin\includes\template.php(1790): do_settings_fields('prefixs', 'prefix_section_...')
+#3 C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php(54): do_settings_sections('prefixs')
+#4 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(324): save_page('')
+#5 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#6 C:\xampp88\htdocs\ivan2\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#7 C:\xampp88\htdocs\ivan2\wp-admin\admin.php(259): do_action('toplevel_page_p...')
+#8 {main}
+  thrown di C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php pada baris 194
+
+2023-12-14T04:28:53+00:00 CRITICAL Uncaught TypeError: in_array(): Argument #2 ($haystack) must be of type array, null given in C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php:194
+Stack trace:
+#0 C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php(194): in_array(NULL, NULL)
+#1 C:\xampp88\htdocs\ivan2\wp-admin\includes\template.php(1836): slugs(Array)
+#2 C:\xampp88\htdocs\ivan2\wp-admin\includes\template.php(1790): do_settings_fields('prefixs', 'prefix_section_...')
+#3 C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php(54): do_settings_sections('prefixs')
+#4 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(324): save_page('')
+#5 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#6 C:\xampp88\htdocs\ivan2\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#7 C:\xampp88\htdocs\ivan2\wp-admin\admin.php(259): do_action('toplevel_page_p...')
+#8 {main}
+  thrown di C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php pada baris 194
+
+2023-12-14T04:29:08+00:00 CRITICAL Uncaught TypeError: in_array(): Argument #2 ($haystack) must be of type array, null given in C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php:194
+Stack trace:
+#0 C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php(194): in_array(NULL, NULL)
+#1 C:\xampp88\htdocs\ivan2\wp-admin\includes\template.php(1836): slugs(Array)
+#2 C:\xampp88\htdocs\ivan2\wp-admin\includes\template.php(1790): do_settings_fields('prefixs', 'prefix_section_...')
+#3 C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php(54): do_settings_sections('prefixs')
+#4 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(324): save_page('')
+#5 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#6 C:\xampp88\htdocs\ivan2\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#7 C:\xampp88\htdocs\ivan2\wp-admin\admin.php(259): do_action('toplevel_page_p...')
+#8 {main}
+  thrown di C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php pada baris 194
+
+2023-12-14T04:29:12+00:00 CRITICAL Uncaught TypeError: in_array(): Argument #2 ($haystack) must be of type array, null given in C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php:195
+Stack trace:
+#0 C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php(195): in_array(NULL, NULL)
+#1 C:\xampp88\htdocs\ivan2\wp-admin\includes\template.php(1836): slugs(Array)
+#2 C:\xampp88\htdocs\ivan2\wp-admin\includes\template.php(1790): do_settings_fields('prefixs', 'prefix_section_...')
+#3 C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php(54): do_settings_sections('prefixs')
+#4 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(324): save_page('')
+#5 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#6 C:\xampp88\htdocs\ivan2\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#7 C:\xampp88\htdocs\ivan2\wp-admin\admin.php(259): do_action('toplevel_page_p...')
+#8 {main}
+  thrown di C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php pada baris 195
+
+2023-12-14T04:29:21+00:00 CRITICAL Uncaught TypeError: in_array(): Argument #2 ($haystack) must be of type array, null given in C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php:195
+Stack trace:
+#0 C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php(195): in_array(NULL, NULL)
+#1 C:\xampp88\htdocs\ivan2\wp-admin\includes\template.php(1836): slugs(Array)
+#2 C:\xampp88\htdocs\ivan2\wp-admin\includes\template.php(1790): do_settings_fields('prefixs', 'prefix_section_...')
+#3 C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php(54): do_settings_sections('prefixs')
+#4 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(324): save_page('')
+#5 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#6 C:\xampp88\htdocs\ivan2\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#7 C:\xampp88\htdocs\ivan2\wp-admin\admin.php(259): do_action('toplevel_page_p...')
+#8 {main}
+  thrown di C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php pada baris 195
+
+2023-12-14T04:33:40+00:00 CRITICAL Uncaught ArgumentCountError: in_array() expects at least 2 arguments, 1 given in C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php:194
+Stack trace:
+#0 C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php(194): in_array('Akun Saya')
+#1 C:\xampp88\htdocs\ivan2\wp-admin\includes\template.php(1836): slugs(Array)
+#2 C:\xampp88\htdocs\ivan2\wp-admin\includes\template.php(1790): do_settings_fields('prefixs', 'prefix_section_...')
+#3 C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php(54): do_settings_sections('prefixs')
+#4 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(324): save_page('')
+#5 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#6 C:\xampp88\htdocs\ivan2\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#7 C:\xampp88\htdocs\ivan2\wp-admin\admin.php(259): do_action('toplevel_page_p...')
+#8 {main}
+  thrown di C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php pada baris 194
+
+2023-12-14T04:34:10+00:00 CRITICAL Uncaught ArgumentCountError: in_array() expects at least 2 arguments, 1 given in C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php:194
+Stack trace:
+#0 C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php(194): in_array('Akun Saya')
+#1 C:\xampp88\htdocs\ivan2\wp-admin\includes\template.php(1836): slugs(Array)
+#2 C:\xampp88\htdocs\ivan2\wp-admin\includes\template.php(1790): do_settings_fields('prefixs', 'prefix_section_...')
+#3 C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php(54): do_settings_sections('prefixs')
+#4 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(324): save_page('')
+#5 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#6 C:\xampp88\htdocs\ivan2\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#7 C:\xampp88\htdocs\ivan2\wp-admin\admin.php(259): do_action('toplevel_page_p...')
+#8 {main}
+  thrown di C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php pada baris 194
+
+2023-12-14T04:34:35+00:00 CRITICAL Uncaught ArgumentCountError: in_array() expects at least 2 arguments, 1 given in C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php:194
+Stack trace:
+#0 C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php(194): in_array('Akun Saya')
+#1 C:\xampp88\htdocs\ivan2\wp-admin\includes\template.php(1836): slugs(Array)
+#2 C:\xampp88\htdocs\ivan2\wp-admin\includes\template.php(1790): do_settings_fields('prefixs', 'prefix_section_...')
+#3 C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php(54): do_settings_sections('prefixs')
+#4 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(324): save_page('')
+#5 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#6 C:\xampp88\htdocs\ivan2\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#7 C:\xampp88\htdocs\ivan2\wp-admin\admin.php(259): do_action('toplevel_page_p...')
+#8 {main}
+  thrown di C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php pada baris 194
+
+2023-12-14T04:34:42+00:00 CRITICAL Uncaught ArgumentCountError: in_array() expects at least 2 arguments, 1 given in C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php:194
+Stack trace:
+#0 C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php(194): in_array('Akun Saya')
+#1 C:\xampp88\htdocs\ivan2\wp-admin\includes\template.php(1836): slugs(Array)
+#2 C:\xampp88\htdocs\ivan2\wp-admin\includes\template.php(1790): do_settings_fields('prefixs', 'prefix_section_...')
+#3 C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php(54): do_settings_sections('prefixs')
+#4 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(324): save_page('')
+#5 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#6 C:\xampp88\htdocs\ivan2\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#7 C:\xampp88\htdocs\ivan2\wp-admin\admin.php(259): do_action('toplevel_page_p...')
+#8 {main}
+  thrown di C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php pada baris 194
+
+2023-12-14T04:34:46+00:00 CRITICAL Uncaught ArgumentCountError: in_array() expects at least 2 arguments, 1 given in C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php:194
+Stack trace:
+#0 C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php(194): in_array('Akun Saya')
+#1 C:\xampp88\htdocs\ivan2\wp-admin\includes\template.php(1836): slugs(Array)
+#2 C:\xampp88\htdocs\ivan2\wp-admin\includes\template.php(1790): do_settings_fields('prefixs', 'prefix_section_...')
+#3 C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php(54): do_settings_sections('prefixs')
+#4 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(324): save_page('')
+#5 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#6 C:\xampp88\htdocs\ivan2\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#7 C:\xampp88\htdocs\ivan2\wp-admin\admin.php(259): do_action('toplevel_page_p...')
+#8 {main}
+  thrown di C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php pada baris 194
+
+2023-12-14T04:44:33+00:00 CRITICAL Uncaught TypeError: in_array(): Argument #2 ($haystack) must be of type array, null given in C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php:191
+Stack trace:
+#0 C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php(191): in_array('my-account', NULL)
+#1 C:\xampp88\htdocs\ivan2\wp-admin\includes\template.php(1836): slugs(Array)
+#2 C:\xampp88\htdocs\ivan2\wp-admin\includes\template.php(1790): do_settings_fields('prefixs', 'prefix_section_...')
+#3 C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php(54): do_settings_sections('prefixs')
+#4 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(324): save_page('')
+#5 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#6 C:\xampp88\htdocs\ivan2\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#7 C:\xampp88\htdocs\ivan2\wp-admin\admin.php(259): do_action('toplevel_page_p...')
+#8 {main}
+  thrown di C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php pada baris 191
+
+2023-12-14T04:44:41+00:00 CRITICAL Uncaught TypeError: in_array(): Argument #2 ($haystack) must be of type array, null given in C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php:191
+Stack trace:
+#0 C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php(191): in_array('my-account', NULL)
+#1 C:\xampp88\htdocs\ivan2\wp-admin\includes\template.php(1836): slugs(Array)
+#2 C:\xampp88\htdocs\ivan2\wp-admin\includes\template.php(1790): do_settings_fields('prefixs', 'prefix_section_...')
+#3 C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php(54): do_settings_sections('prefixs')
+#4 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(324): save_page('')
+#5 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#6 C:\xampp88\htdocs\ivan2\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#7 C:\xampp88\htdocs\ivan2\wp-admin\admin.php(259): do_action('toplevel_page_p...')
+#8 {main}
+  thrown di C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php pada baris 191
+
+2023-12-14T04:45:07+00:00 CRITICAL Uncaught TypeError: in_array(): Argument #2 ($haystack) must be of type array, null given in C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php:191
+Stack trace:
+#0 C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php(191): in_array('my-account', NULL)
+#1 C:\xampp88\htdocs\ivan2\wp-admin\includes\template.php(1836): slugs(Array)
+#2 C:\xampp88\htdocs\ivan2\wp-admin\includes\template.php(1790): do_settings_fields('prefixs', 'prefix_section_...')
+#3 C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php(54): do_settings_sections('prefixs')
+#4 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(324): save_page('')
+#5 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#6 C:\xampp88\htdocs\ivan2\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#7 C:\xampp88\htdocs\ivan2\wp-admin\admin.php(259): do_action('toplevel_page_p...')
+#8 {main}
+  thrown di C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php pada baris 191
+
+2023-12-14T04:45:30+00:00 CRITICAL Uncaught TypeError: in_array(): Argument #2 ($haystack) must be of type array, null given in C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php:191
+Stack trace:
+#0 C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php(191): in_array('my-account', NULL)
+#1 C:\xampp88\htdocs\ivan2\wp-admin\includes\template.php(1836): slugs(Array)
+#2 C:\xampp88\htdocs\ivan2\wp-admin\includes\template.php(1790): do_settings_fields('prefixs', 'prefix_section_...')
+#3 C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php(54): do_settings_sections('prefixs')
+#4 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(324): save_page('')
+#5 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#6 C:\xampp88\htdocs\ivan2\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#7 C:\xampp88\htdocs\ivan2\wp-admin\admin.php(259): do_action('toplevel_page_p...')
+#8 {main}
+  thrown di C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php pada baris 191
+
+2023-12-14T04:45:40+00:00 CRITICAL Uncaught TypeError: in_array(): Argument #2 ($haystack) must be of type array, null given in C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php:191
+Stack trace:
+#0 C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php(191): in_array('my-account', NULL)
+#1 C:\xampp88\htdocs\ivan2\wp-admin\includes\template.php(1836): slugs(Array)
+#2 C:\xampp88\htdocs\ivan2\wp-admin\includes\template.php(1790): do_settings_fields('prefixs', 'prefix_section_...')
+#3 C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php(54): do_settings_sections('prefixs')
+#4 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(324): save_page('')
+#5 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#6 C:\xampp88\htdocs\ivan2\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#7 C:\xampp88\htdocs\ivan2\wp-admin\admin.php(259): do_action('toplevel_page_p...')
+#8 {main}
+  thrown di C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php pada baris 191
+
+2023-12-14T04:46:14+00:00 CRITICAL Uncaught TypeError: in_array(): Argument #2 ($haystack) must be of type array, null given in C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php:191
+Stack trace:
+#0 C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php(191): in_array('my-account', NULL)
+#1 C:\xampp88\htdocs\ivan2\wp-admin\includes\template.php(1836): slugs(Array)
+#2 C:\xampp88\htdocs\ivan2\wp-admin\includes\template.php(1790): do_settings_fields('prefixs', 'prefix_section_...')
+#3 C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php(54): do_settings_sections('prefixs')
+#4 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(324): save_page('')
+#5 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#6 C:\xampp88\htdocs\ivan2\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#7 C:\xampp88\htdocs\ivan2\wp-admin\admin.php(259): do_action('toplevel_page_p...')
+#8 {main}
+  thrown di C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php pada baris 191
+
+2023-12-14T04:46:52+00:00 CRITICAL Uncaught TypeError: in_array(): Argument #2 ($haystack) must be of type array, null given in C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php:191
+Stack trace:
+#0 C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php(191): in_array('my-account', NULL)
+#1 C:\xampp88\htdocs\ivan2\wp-admin\includes\template.php(1836): slugs(Array)
+#2 C:\xampp88\htdocs\ivan2\wp-admin\includes\template.php(1790): do_settings_fields('prefixs', 'prefix_section_...')
+#3 C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php(54): do_settings_sections('prefixs')
+#4 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(324): save_page('')
+#5 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#6 C:\xampp88\htdocs\ivan2\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#7 C:\xampp88\htdocs\ivan2\wp-admin\admin.php(259): do_action('toplevel_page_p...')
+#8 {main}
+  thrown di C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php pada baris 191
+
+2023-12-14T04:47:21+00:00 CRITICAL Uncaught TypeError: in_array(): Argument #2 ($haystack) must be of type array, null given in C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php:191
+Stack trace:
+#0 C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php(191): in_array('my-account', NULL)
+#1 C:\xampp88\htdocs\ivan2\wp-admin\includes\template.php(1836): slugs(Array)
+#2 C:\xampp88\htdocs\ivan2\wp-admin\includes\template.php(1790): do_settings_fields('prefixs', 'prefix_section_...')
+#3 C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php(54): do_settings_sections('prefixs')
+#4 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(324): save_page('')
+#5 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#6 C:\xampp88\htdocs\ivan2\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#7 C:\xampp88\htdocs\ivan2\wp-admin\admin.php(259): do_action('toplevel_page_p...')
+#8 {main}
+  thrown di C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php pada baris 191
+
+2023-12-14T04:47:33+00:00 CRITICAL Uncaught TypeError: in_array(): Argument #2 ($haystack) must be of type array, null given in C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php:191
+Stack trace:
+#0 C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php(191): in_array('my-account', NULL)
+#1 C:\xampp88\htdocs\ivan2\wp-admin\includes\template.php(1836): slugs(Array)
+#2 C:\xampp88\htdocs\ivan2\wp-admin\includes\template.php(1790): do_settings_fields('prefixs', 'prefix_section_...')
+#3 C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php(54): do_settings_sections('prefixs')
+#4 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(324): save_page('')
+#5 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#6 C:\xampp88\htdocs\ivan2\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#7 C:\xampp88\htdocs\ivan2\wp-admin\admin.php(259): do_action('toplevel_page_p...')
+#8 {main}
+  thrown di C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php pada baris 191
+
+2023-12-14T04:47:38+00:00 CRITICAL Uncaught TypeError: in_array(): Argument #2 ($haystack) must be of type array, null given in C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php:191
+Stack trace:
+#0 C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php(191): in_array('my-account', NULL)
+#1 C:\xampp88\htdocs\ivan2\wp-admin\includes\template.php(1836): slugs(Array)
+#2 C:\xampp88\htdocs\ivan2\wp-admin\includes\template.php(1790): do_settings_fields('prefixs', 'prefix_section_...')
+#3 C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php(54): do_settings_sections('prefixs')
+#4 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(324): save_page('')
+#5 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#6 C:\xampp88\htdocs\ivan2\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#7 C:\xampp88\htdocs\ivan2\wp-admin\admin.php(259): do_action('toplevel_page_p...')
+#8 {main}
+  thrown di C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php pada baris 191
+
+2023-12-14T04:48:03+00:00 CRITICAL Uncaught TypeError: in_array(): Argument #2 ($haystack) must be of type array, null given in C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php:191
+Stack trace:
+#0 C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php(191): in_array('my-account', NULL)
+#1 C:\xampp88\htdocs\ivan2\wp-admin\includes\template.php(1836): slugs(Array)
+#2 C:\xampp88\htdocs\ivan2\wp-admin\includes\template.php(1790): do_settings_fields('prefixs', 'prefix_section_...')
+#3 C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php(54): do_settings_sections('prefixs')
+#4 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(324): save_page('')
+#5 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#6 C:\xampp88\htdocs\ivan2\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#7 C:\xampp88\htdocs\ivan2\wp-admin\admin.php(259): do_action('toplevel_page_p...')
+#8 {main}
+  thrown di C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php pada baris 191
+
+2023-12-14T04:48:31+00:00 CRITICAL Uncaught TypeError: in_array(): Argument #2 ($haystack) must be of type array, null given in C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php:191
+Stack trace:
+#0 C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php(191): in_array('my-account', NULL)
+#1 C:\xampp88\htdocs\ivan2\wp-admin\includes\template.php(1836): slugs(Array)
+#2 C:\xampp88\htdocs\ivan2\wp-admin\includes\template.php(1790): do_settings_fields('prefixs', 'prefix_section_...')
+#3 C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php(54): do_settings_sections('prefixs')
+#4 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(324): save_page('')
+#5 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#6 C:\xampp88\htdocs\ivan2\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#7 C:\xampp88\htdocs\ivan2\wp-admin\admin.php(259): do_action('toplevel_page_p...')
+#8 {main}
+  thrown di C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php pada baris 191
+
+2023-12-14T04:48:48+00:00 CRITICAL Uncaught TypeError: in_array(): Argument #2 ($haystack) must be of type array, null given in C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php:191
+Stack trace:
+#0 C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php(191): in_array('my-account', NULL)
+#1 C:\xampp88\htdocs\ivan2\wp-admin\includes\template.php(1836): slugs(Array)
+#2 C:\xampp88\htdocs\ivan2\wp-admin\includes\template.php(1790): do_settings_fields('prefixs', 'prefix_section_...')
+#3 C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php(54): do_settings_sections('prefixs')
+#4 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(324): save_page('')
+#5 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#6 C:\xampp88\htdocs\ivan2\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#7 C:\xampp88\htdocs\ivan2\wp-admin\admin.php(259): do_action('toplevel_page_p...')
+#8 {main}
+  thrown di C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php pada baris 191
+
+2023-12-14T04:48:57+00:00 CRITICAL Uncaught TypeError: Cannot access offset of type string on string in C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php:180
+Stack trace:
+#0 C:\xampp88\htdocs\ivan2\wp-admin\includes\template.php(1836): slugs(Array)
+#1 C:\xampp88\htdocs\ivan2\wp-admin\includes\template.php(1790): do_settings_fields('prefixs', 'prefix_section_...')
+#2 C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php(54): do_settings_sections('prefixs')
+#3 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(324): save_page('')
+#4 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#5 C:\xampp88\htdocs\ivan2\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#6 C:\xampp88\htdocs\ivan2\wp-admin\admin.php(259): do_action('toplevel_page_p...')
+#7 {main}
+  thrown di C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php pada baris 180
+
+2023-12-14T04:49:08+00:00 CRITICAL Uncaught TypeError: in_array(): Argument #2 ($haystack) must be of type array, null given in C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php:191
+Stack trace:
+#0 C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php(191): in_array('my-account', NULL)
+#1 C:\xampp88\htdocs\ivan2\wp-admin\includes\template.php(1836): slugs(Array)
+#2 C:\xampp88\htdocs\ivan2\wp-admin\includes\template.php(1790): do_settings_fields('prefixs', 'prefix_section_...')
+#3 C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php(54): do_settings_sections('prefixs')
+#4 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(324): save_page('')
+#5 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#6 C:\xampp88\htdocs\ivan2\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#7 C:\xampp88\htdocs\ivan2\wp-admin\admin.php(259): do_action('toplevel_page_p...')
+#8 {main}
+  thrown di C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php pada baris 191
+
+2023-12-14T04:49:47+00:00 CRITICAL Uncaught TypeError: in_array(): Argument #2 ($haystack) must be of type array, null given in C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php:191
+Stack trace:
+#0 C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php(191): in_array('my-account', NULL)
+#1 C:\xampp88\htdocs\ivan2\wp-admin\includes\template.php(1836): slugs(Array)
+#2 C:\xampp88\htdocs\ivan2\wp-admin\includes\template.php(1790): do_settings_fields('prefixs', 'prefix_section_...')
+#3 C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php(54): do_settings_sections('prefixs')
+#4 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(324): save_page('')
+#5 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#6 C:\xampp88\htdocs\ivan2\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#7 C:\xampp88\htdocs\ivan2\wp-admin\admin.php(259): do_action('toplevel_page_p...')
+#8 {main}
+  thrown di C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php pada baris 191
+
+2023-12-14T04:49:59+00:00 CRITICAL Uncaught TypeError: Illegal offset type in C:\xampp88\htdocs\ivan2\wp-content\plugins\wc-price-badge\price-badge.php:374
+Stack trace:
+#0 C:\xampp88\htdocs\ivan2\wp-admin\includes\template.php(1836): pbdge_tag_cb(Array)
+#1 C:\xampp88\htdocs\ivan2\wp-admin\includes\template.php(1790): do_settings_fields('prefix', 'prefix_section_...')
+#2 C:\xampp88\htdocs\ivan2\wp-content\plugins\wc-price-badge\price-badge.php(508): do_settings_sections('prefix')
+#3 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(324): pbdge_save_page('')
+#4 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#5 C:\xampp88\htdocs\ivan2\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#6 C:\xampp88\htdocs\ivan2\wp-admin\admin.php(259): do_action('toplevel_page_p...')
+#7 {main}
+  thrown di C:\xampp88\htdocs\ivan2\wp-content\plugins\wc-price-badge\price-badge.php pada baris 374
+
+2023-12-14T04:50:12+00:00 CRITICAL Uncaught TypeError: in_array(): Argument #2 ($haystack) must be of type array, null given in C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php:191
+Stack trace:
+#0 C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php(191): in_array('my-account', NULL)
+#1 C:\xampp88\htdocs\ivan2\wp-admin\includes\template.php(1836): slugs(Array)
+#2 C:\xampp88\htdocs\ivan2\wp-admin\includes\template.php(1790): do_settings_fields('prefixs', 'prefix_section_...')
+#3 C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php(54): do_settings_sections('prefixs')
+#4 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(324): save_page('')
+#5 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#6 C:\xampp88\htdocs\ivan2\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#7 C:\xampp88\htdocs\ivan2\wp-admin\admin.php(259): do_action('toplevel_page_p...')
+#8 {main}
+  thrown di C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php pada baris 191
+
+2023-12-14T04:50:13+00:00 CRITICAL Uncaught TypeError: in_array(): Argument #2 ($haystack) must be of type array, null given in C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php:191
+Stack trace:
+#0 C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php(191): in_array('my-account', NULL)
+#1 C:\xampp88\htdocs\ivan2\wp-admin\includes\template.php(1836): slugs(Array)
+#2 C:\xampp88\htdocs\ivan2\wp-admin\includes\template.php(1790): do_settings_fields('prefixs', 'prefix_section_...')
+#3 C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php(54): do_settings_sections('prefixs')
+#4 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(324): save_page('')
+#5 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#6 C:\xampp88\htdocs\ivan2\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#7 C:\xampp88\htdocs\ivan2\wp-admin\admin.php(259): do_action('toplevel_page_p...')
+#8 {main}
+  thrown di C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php pada baris 191
+
+2023-12-14T04:50:18+00:00 CRITICAL Uncaught TypeError: Illegal offset type in C:\xampp88\htdocs\ivan2\wp-content\plugins\wc-price-badge\price-badge.php:374
+Stack trace:
+#0 C:\xampp88\htdocs\ivan2\wp-admin\includes\template.php(1836): pbdge_tag_cb(Array)
+#1 C:\xampp88\htdocs\ivan2\wp-admin\includes\template.php(1790): do_settings_fields('prefix', 'prefix_section_...')
+#2 C:\xampp88\htdocs\ivan2\wp-content\plugins\wc-price-badge\price-badge.php(508): do_settings_sections('prefix')
+#3 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(324): pbdge_save_page('')
+#4 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#5 C:\xampp88\htdocs\ivan2\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#6 C:\xampp88\htdocs\ivan2\wp-admin\admin.php(259): do_action('toplevel_page_p...')
+#7 {main}
+  thrown di C:\xampp88\htdocs\ivan2\wp-content\plugins\wc-price-badge\price-badge.php pada baris 374
+
+2023-12-14T04:56:44+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function custom_page_content(), 1 passed in C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php on line 324 and exactly 2 expected in C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php:223
+Stack trace:
+#0 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(324): custom_page_content('')
+#1 C:\xampp88\htdocs\ivan2\wp-includes\plugin.php(205): WP_Hook->apply_filters('', Array)
+#2 C:\xampp88\htdocs\ivan2\wp-includes\post-template.php(256): apply_filters('the_content', '')
+#3 C:\xampp88\htdocs\ivan2\wp-content\themes\flatsome\page.php(33): the_content()
+#4 C:\xampp88\htdocs\ivan2\wp-includes\template-loader.php(106): include('C:\\xampp88\\htdo...')
+#5 C:\xampp88\htdocs\ivan2\wp-blog-header.php(19): require_once('C:\\xampp88\\htdo...')
+#6 C:\xampp88\htdocs\ivan2\index.php(17): require('C:\\xampp88\\htdo...')
+#7 {main}
+  thrown di C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php pada baris 223
+
+2023-12-14T04:56:46+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function custom_page_content(), 1 passed in C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php on line 324 and exactly 2 expected in C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php:223
+Stack trace:
+#0 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(324): custom_page_content('')
+#1 C:\xampp88\htdocs\ivan2\wp-includes\plugin.php(205): WP_Hook->apply_filters('', Array)
+#2 C:\xampp88\htdocs\ivan2\wp-includes\post-template.php(256): apply_filters('the_content', '')
+#3 C:\xampp88\htdocs\ivan2\wp-content\themes\flatsome\page.php(33): the_content()
+#4 C:\xampp88\htdocs\ivan2\wp-includes\template-loader.php(106): include('C:\\xampp88\\htdo...')
+#5 C:\xampp88\htdocs\ivan2\wp-blog-header.php(19): require_once('C:\\xampp88\\htdo...')
+#6 C:\xampp88\htdocs\ivan2\index.php(17): require('C:\\xampp88\\htdo...')
+#7 {main}
+  thrown di C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php pada baris 223
+
+2023-12-14T04:56:53+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function custom_page_content(), 1 passed in C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php on line 324 and exactly 2 expected in C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php:223
+Stack trace:
+#0 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(324): custom_page_content('')
+#1 C:\xampp88\htdocs\ivan2\wp-includes\plugin.php(205): WP_Hook->apply_filters('', Array)
+#2 C:\xampp88\htdocs\ivan2\wp-includes\post-template.php(256): apply_filters('the_content', '')
+#3 C:\xampp88\htdocs\ivan2\wp-content\themes\flatsome\page.php(33): the_content()
+#4 C:\xampp88\htdocs\ivan2\wp-includes\template-loader.php(106): include('C:\\xampp88\\htdo...')
+#5 C:\xampp88\htdocs\ivan2\wp-blog-header.php(19): require_once('C:\\xampp88\\htdo...')
+#6 C:\xampp88\htdocs\ivan2\index.php(17): require('C:\\xampp88\\htdo...')
+#7 {main}
+  thrown di C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php pada baris 223
+
+2023-12-14T08:12:36+00:00 CRITICAL Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, function "testt" not found or invalid function name in C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php:324
+Stack trace:
+#0 C:\xampp88\htdocs\ivan2\wp-includes\plugin.php(205): WP_Hook->apply_filters('', Array)
+#1 C:\xampp88\htdocs\ivan2\wp-includes\post-template.php(256): apply_filters('the_content', '<!-- wp:html --...')
+#2 C:\xampp88\htdocs\ivan2\wp-content\themes\flatsome\page.php(33): the_content()
+#3 C:\xampp88\htdocs\ivan2\wp-includes\template-loader.php(106): include('C:\\xampp88\\htdo...')
+#4 C:\xampp88\htdocs\ivan2\wp-blog-header.php(19): require_once('C:\\xampp88\\htdo...')
+#5 C:\xampp88\htdocs\ivan2\index.php(17): require('C:\\xampp88\\htdo...')
+#6 {main}
+  thrown di C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php pada baris 324
+
+2023-12-14T08:12:43+00:00 CRITICAL Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, function "testt" not found or invalid function name in C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php:324
+Stack trace:
+#0 C:\xampp88\htdocs\ivan2\wp-includes\plugin.php(205): WP_Hook->apply_filters('', Array)
+#1 C:\xampp88\htdocs\ivan2\wp-includes\post-template.php(256): apply_filters('the_content', '<!-- wp:html --...')
+#2 C:\xampp88\htdocs\ivan2\wp-content\themes\flatsome\page.php(33): the_content()
+#3 C:\xampp88\htdocs\ivan2\wp-includes\template-loader.php(106): include('C:\\xampp88\\htdo...')
+#4 C:\xampp88\htdocs\ivan2\wp-blog-header.php(19): require_once('C:\\xampp88\\htdo...')
+#5 C:\xampp88\htdocs\ivan2\index.php(17): require('C:\\xampp88\\htdo...')
+#6 {main}
+  thrown di C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php pada baris 324
+
+2023-12-14T08:32:08+00:00 CRITICAL Uncaught Error: Call to undefined function flatsome_ux_builder_thumbnail() in C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php:229
+Stack trace:
+#0 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(324): ux_builder_element('')
+#1 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#2 C:\xampp88\htdocs\ivan2\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#3 C:\xampp88\htdocs\ivan2\wp-content\themes\flatsome\inc\builder\core\server\src\Application.php(63): do_action('ux_builder_setu...')
+#4 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(324): UxBuilder\Application->initialize('')
+#5 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#6 C:\xampp88\htdocs\ivan2\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#7 C:\xampp88\htdocs\ivan2\wp-settings.php(643): do_action('init')
+#8 C:\xampp88\htdocs\ivan2\wp-config.php(99): require_once('C:\\xampp88\\htdo...')
+#9 C:\xampp88\htdocs\ivan2\wp-load.php(50): require_once('C:\\xampp88\\htdo...')
+#10 C:\xampp88\htdocs\ivan2\wp-admin\admin.php(34): require_once('C:\\xampp88\\htdo...')
+#11 C:\xampp88\htdocs\ivan2\wp-admin\post.php(12): require_once('C:\\xampp88\\htdo...')
+#12 {main}
+  thrown di C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php pada baris 229
+
+2023-12-14T08:33:59+00:00 CRITICAL Uncaught Error: Failed opening required 'C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki/commons/advanced.php' (include_path='C:\xampp88\php\PEAR') in C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php:254
+Stack trace:
+#0 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(324): ux_builder_element('')
+#1 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#2 C:\xampp88\htdocs\ivan2\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#3 C:\xampp88\htdocs\ivan2\wp-content\themes\flatsome\inc\builder\core\server\src\Application.php(63): do_action('ux_builder_setu...')
+#4 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(324): UxBuilder\Application->initialize('')
+#5 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#6 C:\xampp88\htdocs\ivan2\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#7 C:\xampp88\htdocs\ivan2\wp-settings.php(643): do_action('init')
+#8 C:\xampp88\htdocs\ivan2\wp-config.php(99): require_once('C:\\xampp88\\htdo...')
+#9 C:\xampp88\htdocs\ivan2\wp-load.php(50): require_once('C:\\xampp88\\htdo...')
+#10 C:\xampp88\htdocs\ivan2\wp-admin\admin.php(34): require_once('C:\\xampp88\\htdo...')
+#11 C:\xampp88\htdocs\ivan2\wp-admin\post.php(12): require_once('C:\\xampp88\\htdo...')
+#12 {main}
+  thrown di C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php pada baris 254
+
+2023-12-14T08:34:02+00:00 CRITICAL Uncaught Error: Failed opening required 'C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki/commons/advanced.php' (include_path='C:\xampp88\php\PEAR') in C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php:254
+Stack trace:
+#0 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(324): ux_builder_element('')
+#1 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#2 C:\xampp88\htdocs\ivan2\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#3 C:\xampp88\htdocs\ivan2\wp-content\themes\flatsome\inc\builder\core\server\src\Application.php(63): do_action('ux_builder_setu...')
+#4 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(324): UxBuilder\Application->initialize('')
+#5 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#6 C:\xampp88\htdocs\ivan2\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#7 C:\xampp88\htdocs\ivan2\wp-settings.php(643): do_action('init')
+#8 C:\xampp88\htdocs\ivan2\wp-config.php(99): require_once('C:\\xampp88\\htdo...')
+#9 C:\xampp88\htdocs\ivan2\wp-load.php(50): require_once('C:\\xampp88\\htdo...')
+#10 C:\xampp88\htdocs\ivan2\wp-admin\admin.php(34): require_once('C:\\xampp88\\htdo...')
+#11 C:\xampp88\htdocs\ivan2\wp-admin\post.php(12): require_once('C:\\xampp88\\htdo...')
+#12 {main}
+  thrown di C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php pada baris 254
+
+2023-12-14T08:38:23+00:00 CRITICAL Cannot redeclare flatsome_render_ux_menu_shortcode() (previously declared in C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php:259) di C:\xampp88\htdocs\ivan2\wp-content\themes\flatsome\inc\shortcodes\ux_menu.php pada baris 17
+
+2023-12-14T08:38:23+00:00 CRITICAL Cannot redeclare flatsome_render_ux_menu_shortcode() (previously declared in C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php:259) di C:\xampp88\htdocs\ivan2\wp-content\themes\flatsome\inc\shortcodes\ux_menu.php pada baris 17
+
+2023-12-14T08:38:24+00:00 CRITICAL Cannot redeclare flatsome_render_ux_menu_shortcode() (previously declared in C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php:259) di C:\xampp88\htdocs\ivan2\wp-content\themes\flatsome\inc\shortcodes\ux_menu.php pada baris 17
+
+2023-12-14T08:38:25+00:00 CRITICAL Cannot redeclare flatsome_render_ux_menu_shortcode() (previously declared in C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php:259) di C:\xampp88\htdocs\ivan2\wp-content\themes\flatsome\inc\shortcodes\ux_menu.php pada baris 17
+
+2023-12-14T08:38:50+00:00 CRITICAL Cannot redeclare flatsome_render_ux_menu_shortcode() (previously declared in C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php:259) di C:\xampp88\htdocs\ivan2\wp-content\themes\flatsome\inc\shortcodes\ux_menu.php pada baris 17
+
+2023-12-14T08:39:23+00:00 CRITICAL Cannot redeclare flatsome_render_ux_menu_shortcode() (previously declared in C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php:259) di C:\xampp88\htdocs\ivan2\wp-content\themes\flatsome\inc\shortcodes\ux_menu.php pada baris 17
+
+2023-12-14T08:39:25+00:00 CRITICAL Cannot redeclare flatsome_render_ux_menu_shortcode() (previously declared in C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php:259) di C:\xampp88\htdocs\ivan2\wp-content\themes\flatsome\inc\shortcodes\ux_menu.php pada baris 17
+
+2023-12-14T08:40:00+00:00 CRITICAL Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, function "custom_page_content" not found or invalid function name in C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php:324
+Stack trace:
+#0 C:\xampp88\htdocs\ivan2\wp-includes\plugin.php(205): WP_Hook->apply_filters('<post-wrapper><...', Array)
+#1 C:\xampp88\htdocs\ivan2\wp-includes\post-template.php(256): apply_filters('the_content', '<post-wrapper><...')
+#2 C:\xampp88\htdocs\ivan2\wp-content\themes\flatsome\page.php(33): the_content()
+#3 C:\xampp88\htdocs\ivan2\wp-includes\template-loader.php(106): include('C:\\xampp88\\htdo...')
+#4 C:\xampp88\htdocs\ivan2\wp-blog-header.php(19): require_once('C:\\xampp88\\htdo...')
+#5 C:\xampp88\htdocs\ivan2\index.php(17): require('C:\\xampp88\\htdo...')
+#6 {main}
+  thrown di C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php pada baris 324
+
+2023-12-14T08:57:39+00:00 CRITICAL Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, array must have exactly two members in C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php:324
+Stack trace:
+#0 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#1 C:\xampp88\htdocs\ivan2\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#2 C:\xampp88\htdocs\ivan2\wp-content\themes\flatsome\inc\builder\core\server\src\Application.php(63): do_action('ux_builder_setu...')
+#3 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(324): UxBuilder\Application->initialize('')
+#4 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#5 C:\xampp88\htdocs\ivan2\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#6 C:\xampp88\htdocs\ivan2\wp-settings.php(643): do_action('init')
+#7 C:\xampp88\htdocs\ivan2\wp-config.php(99): require_once('C:\\xampp88\\htdo...')
+#8 C:\xampp88\htdocs\ivan2\wp-load.php(50): require_once('C:\\xampp88\\htdo...')
+#9 C:\xampp88\htdocs\ivan2\wp-admin\admin.php(34): require_once('C:\\xampp88\\htdo...')
+#10 C:\xampp88\htdocs\ivan2\wp-admin\post.php(12): require_once('C:\\xampp88\\htdo...')
+#11 {main}
+  thrown di C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php pada baris 324
+
+2023-12-14T08:57:59+00:00 CRITICAL Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, array must have exactly two members in C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php:324
+Stack trace:
+#0 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#1 C:\xampp88\htdocs\ivan2\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#2 C:\xampp88\htdocs\ivan2\wp-content\themes\flatsome\inc\builder\core\server\src\Application.php(63): do_action('ux_builder_setu...')
+#3 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(324): UxBuilder\Application->initialize('')
+#4 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#5 C:\xampp88\htdocs\ivan2\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#6 C:\xampp88\htdocs\ivan2\wp-settings.php(643): do_action('init')
+#7 C:\xampp88\htdocs\ivan2\wp-config.php(99): require_once('C:\\xampp88\\htdo...')
+#8 C:\xampp88\htdocs\ivan2\wp-load.php(50): require_once('C:\\xampp88\\htdo...')
+#9 C:\xampp88\htdocs\ivan2\wp-admin\admin.php(34): require_once('C:\\xampp88\\htdo...')
+#10 C:\xampp88\htdocs\ivan2\wp-admin\post.php(12): require_once('C:\\xampp88\\htdo...')
+#11 {main}
+  thrown di C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php pada baris 324
+
+2023-12-14T08:58:02+00:00 CRITICAL Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, array must have exactly two members in C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php:324
+Stack trace:
+#0 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#1 C:\xampp88\htdocs\ivan2\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#2 C:\xampp88\htdocs\ivan2\wp-content\themes\flatsome\inc\builder\core\server\src\Application.php(63): do_action('ux_builder_setu...')
+#3 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(324): UxBuilder\Application->initialize('')
+#4 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#5 C:\xampp88\htdocs\ivan2\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#6 C:\xampp88\htdocs\ivan2\wp-settings.php(643): do_action('init')
+#7 C:\xampp88\htdocs\ivan2\wp-config.php(99): require_once('C:\\xampp88\\htdo...')
+#8 C:\xampp88\htdocs\ivan2\wp-load.php(50): require_once('C:\\xampp88\\htdo...')
+#9 C:\xampp88\htdocs\ivan2\wp-admin\admin.php(34): require_once('C:\\xampp88\\htdo...')
+#10 C:\xampp88\htdocs\ivan2\wp-admin\post.php(12): require_once('C:\\xampp88\\htdo...')
+#11 {main}
+  thrown di C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php pada baris 324
+
+2023-12-14T09:07:24+00:00 CRITICAL Cannot redeclare flatsome_render_ux_menu_shortcode() (previously declared in C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php:272) di C:\xampp88\htdocs\ivan2\wp-content\themes\flatsome\inc\shortcodes\ux_menu.php pada baris 17
+
+2023-12-14T09:07:24+00:00 CRITICAL Cannot redeclare flatsome_render_ux_menu_shortcode() (previously declared in C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php:272) di C:\xampp88\htdocs\ivan2\wp-content\themes\flatsome\inc\shortcodes\ux_menu.php pada baris 17
+
+2023-12-14T09:57:22+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function wp_script_add_data(), 1 passed in C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php on line 213 and exactly 3 expected in C:\xampp88\htdocs\ivan2\wp-includes\functions.wp-scripts.php:445
+Stack trace:
+#0 C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php(213): wp_script_add_data('employee-js')
+#1 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(324): scripts_callback('')
+#2 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#3 C:\xampp88\htdocs\ivan2\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#4 C:\xampp88\htdocs\ivan2\wp-includes\script-loader.php(2262): do_action('wp_enqueue_scri...')
+#5 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(324): wp_enqueue_scripts('')
+#6 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#7 C:\xampp88\htdocs\ivan2\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#8 C:\xampp88\htdocs\ivan2\wp-includes\general-template.php(3052): do_action('wp_head')
+#9 C:\xampp88\htdocs\ivan2\wp-content\themes\flatsome\header.php(26): wp_head()
+#10 C:\xampp88\htdocs\ivan2\wp-includes\template.php(790): require_once('C:\\xampp88\\htdo...')
+#11 C:\xampp88\htdocs\ivan2\wp-includes\template.php(725): load_template('C:\\xampp88\\htdo...', true, Array)
+#12 C:\xampp88\htdocs\ivan2\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#13 C:\xampp88\htdocs\ivan2\wp-content\themes\flatsome\404.php(9): get_header()
+#14 C:\xampp88\htdocs\ivan2\wp-includes\template-loader.php(106): include('C:\\xampp88\\htdo...')
+#15 C:\xampp88\htdocs\ivan2\wp-blog-header.php(19): require_once('C:\\xampp88\\htdo...')
+#16 C:\xampp88\htdocs\ivan2\index.php(17): require('C:\\xampp88\\htdo...')
+#17 {main}
+  thrown di C:\xampp88\htdocs\ivan2\wp-includes\functions.wp-scripts.php pada baris 445
+
+2023-12-14T09:57:22+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function wp_script_add_data(), 1 passed in C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php on line 213 and exactly 3 expected in C:\xampp88\htdocs\ivan2\wp-includes\functions.wp-scripts.php:445
+Stack trace:
+#0 C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php(213): wp_script_add_data('employee-js')
+#1 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(324): scripts_callback('')
+#2 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#3 C:\xampp88\htdocs\ivan2\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#4 C:\xampp88\htdocs\ivan2\wp-includes\script-loader.php(2262): do_action('wp_enqueue_scri...')
+#5 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(324): wp_enqueue_scripts('')
+#6 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#7 C:\xampp88\htdocs\ivan2\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#8 C:\xampp88\htdocs\ivan2\wp-includes\general-template.php(3052): do_action('wp_head')
+#9 C:\xampp88\htdocs\ivan2\wp-content\themes\flatsome\header.php(26): wp_head()
+#10 C:\xampp88\htdocs\ivan2\wp-includes\template.php(790): require_once('C:\\xampp88\\htdo...')
+#11 C:\xampp88\htdocs\ivan2\wp-includes\template.php(725): load_template('C:\\xampp88\\htdo...', true, Array)
+#12 C:\xampp88\htdocs\ivan2\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#13 C:\xampp88\htdocs\ivan2\wp-content\themes\flatsome\404.php(9): get_header()
+#14 C:\xampp88\htdocs\ivan2\wp-includes\template-loader.php(106): include('C:\\xampp88\\htdo...')
+#15 C:\xampp88\htdocs\ivan2\wp-blog-header.php(19): require_once('C:\\xampp88\\htdo...')
+#16 C:\xampp88\htdocs\ivan2\index.php(17): require('C:\\xampp88\\htdo...')
+#17 {main}
+  thrown di C:\xampp88\htdocs\ivan2\wp-includes\functions.wp-scripts.php pada baris 445
+

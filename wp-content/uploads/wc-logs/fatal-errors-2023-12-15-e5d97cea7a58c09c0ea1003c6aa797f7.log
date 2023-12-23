@@ -1,0 +1,85 @@
+2023-12-15T02:24:09+00:00 CRITICAL Maximum execution time of 120 seconds exceeded di C:\xampp88\htdocs\ivan2\wp-content\plugins\woocommerce\includes\admin\class-wc-admin-post-types.php pada baris 12
+
+2023-12-15T04:02:08+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function wp_script_add_data(), 2 passed in C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php on line 246 and exactly 3 expected in C:\xampp88\htdocs\ivan2\wp-includes\functions.wp-scripts.php:445
+Stack trace:
+#0 C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php(246): wp_script_add_data('employee-dom', Array)
+#1 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(324): scripts_callback('')
+#2 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#3 C:\xampp88\htdocs\ivan2\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#4 C:\xampp88\htdocs\ivan2\wp-includes\script-loader.php(2262): do_action('wp_enqueue_scri...')
+#5 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(324): wp_enqueue_scripts('')
+#6 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#7 C:\xampp88\htdocs\ivan2\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#8 C:\xampp88\htdocs\ivan2\wp-includes\general-template.php(3052): do_action('wp_head')
+#9 C:\xampp88\htdocs\ivan2\wp-content\themes\flatsome\header.php(25): wp_head()
+#10 C:\xampp88\htdocs\ivan2\wp-includes\template.php(790): require_once('C:\\xampp88\\htdo...')
+#11 C:\xampp88\htdocs\ivan2\wp-includes\template.php(725): load_template('C:\\xampp88\\htdo...', true, Array)
+#12 C:\xampp88\htdocs\ivan2\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#13 C:\xampp88\htdocs\ivan2\wp-content\themes\flatsome\404.php(9): get_header()
+#14 C:\xampp88\htdocs\ivan2\wp-includes\template-loader.php(106): include('C:\\xampp88\\htdo...')
+#15 C:\xampp88\htdocs\ivan2\wp-blog-header.php(19): require_once('C:\\xampp88\\htdo...')
+#16 C:\xampp88\htdocs\ivan2\index.php(17): require('C:\\xampp88\\htdo...')
+#17 {main}
+  thrown di C:\xampp88\htdocs\ivan2\wp-includes\functions.wp-scripts.php pada baris 445
+
+2023-12-15T04:02:10+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function wp_script_add_data(), 2 passed in C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php on line 246 and exactly 3 expected in C:\xampp88\htdocs\ivan2\wp-includes\functions.wp-scripts.php:445
+Stack trace:
+#0 C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php(246): wp_script_add_data('employee-dom', Array)
+#1 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(324): scripts_callback('')
+#2 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#3 C:\xampp88\htdocs\ivan2\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#4 C:\xampp88\htdocs\ivan2\wp-includes\script-loader.php(2262): do_action('wp_enqueue_scri...')
+#5 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(324): wp_enqueue_scripts('')
+#6 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#7 C:\xampp88\htdocs\ivan2\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#8 C:\xampp88\htdocs\ivan2\wp-includes\general-template.php(3052): do_action('wp_head')
+#9 C:\xampp88\htdocs\ivan2\wp-content\themes\flatsome\header.php(25): wp_head()
+#10 C:\xampp88\htdocs\ivan2\wp-includes\template.php(790): require_once('C:\\xampp88\\htdo...')
+#11 C:\xampp88\htdocs\ivan2\wp-includes\template.php(725): load_template('C:\\xampp88\\htdo...', true, Array)
+#12 C:\xampp88\htdocs\ivan2\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#13 C:\xampp88\htdocs\ivan2\wp-content\themes\flatsome\page.php(17): get_header()
+#14 C:\xampp88\htdocs\ivan2\wp-includes\template-loader.php(106): include('C:\\xampp88\\htdo...')
+#15 C:\xampp88\htdocs\ivan2\wp-blog-header.php(19): require_once('C:\\xampp88\\htdo...')
+#16 C:\xampp88\htdocs\ivan2\index.php(17): require('C:\\xampp88\\htdo...')
+#17 {main}
+  thrown di C:\xampp88\htdocs\ivan2\wp-includes\functions.wp-scripts.php pada baris 445
+
+2023-12-15T04:02:12+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function wp_script_add_data(), 2 passed in C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php on line 246 and exactly 3 expected in C:\xampp88\htdocs\ivan2\wp-includes\functions.wp-scripts.php:445
+Stack trace:
+#0 C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php(246): wp_script_add_data('employee-dom', Array)
+#1 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(324): scripts_callback('')
+#2 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#3 C:\xampp88\htdocs\ivan2\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#4 C:\xampp88\htdocs\ivan2\wp-includes\script-loader.php(2262): do_action('wp_enqueue_scri...')
+#5 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(324): wp_enqueue_scripts('')
+#6 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#7 C:\xampp88\htdocs\ivan2\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#8 C:\xampp88\htdocs\ivan2\wp-includes\general-template.php(3052): do_action('wp_head')
+#9 C:\xampp88\htdocs\ivan2\wp-content\themes\flatsome\header.php(25): wp_head()
+#10 C:\xampp88\htdocs\ivan2\wp-includes\template.php(790): require_once('C:\\xampp88\\htdo...')
+#11 C:\xampp88\htdocs\ivan2\wp-includes\template.php(725): load_template('C:\\xampp88\\htdo...', true, Array)
+#12 C:\xampp88\htdocs\ivan2\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#13 C:\xampp88\htdocs\ivan2\wp-content\themes\flatsome\404.php(9): get_header()
+#14 C:\xampp88\htdocs\ivan2\wp-includes\template-loader.php(106): include('C:\\xampp88\\htdo...')
+#15 C:\xampp88\htdocs\ivan2\wp-blog-header.php(19): require_once('C:\\xampp88\\htdo...')
+#16 C:\xampp88\htdocs\ivan2\index.php(17): require('C:\\xampp88\\htdo...')
+#17 {main}
+  thrown di C:\xampp88\htdocs\ivan2\wp-includes\functions.wp-scripts.php pada baris 445
+
+2023-12-15T08:27:48+00:00 CRITICAL Uncaught Error: Call to undefined function flatsome_ux_builder_thumbnail() in C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php:200
+Stack trace:
+#0 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(324): ux_builder_element('')
+#1 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#2 C:\xampp88\htdocs\ivan2\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#3 C:\xampp88\htdocs\ivan2\wp-content\themes\flatsome\inc\builder\core\server\src\Application.php(63): do_action('ux_builder_setu...')
+#4 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(324): UxBuilder\Application->initialize('')
+#5 C:\xampp88\htdocs\ivan2\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#6 C:\xampp88\htdocs\ivan2\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#7 C:\xampp88\htdocs\ivan2\wp-settings.php(643): do_action('init')
+#8 C:\xampp88\htdocs\ivan2\wp-config.php(99): require_once('C:\\xampp88\\htdo...')
+#9 C:\xampp88\htdocs\ivan2\wp-load.php(50): require_once('C:\\xampp88\\htdo...')
+#10 C:\xampp88\htdocs\ivan2\wp-admin\admin.php(34): require_once('C:\\xampp88\\htdo...')
+#11 C:\xampp88\htdocs\ivan2\wp-admin\post.php(12): require_once('C:\\xampp88\\htdo...')
+#12 {main}
+  thrown di C:\xampp88\htdocs\ivan2\wp-content\plugins\directory_tki\tki.php pada baris 200
+
